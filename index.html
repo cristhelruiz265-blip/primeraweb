@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Aroma | Modern Heritage Coffee</title>
+    <meta name="description" content="Café Aroma - Modern Heritage Coffee. Granos seleccionados y tostados artesanalmente desde 1924.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ==================== COOKIE BANNER ==================== -->
+    <div class="cookie-banner" id="cookie-banner">
+        <div class="cookie-banner-inner">
+            <div class="cookie-banner-content">
+                <span class="material-symbols-outlined cookie-icon">cookie</span>
+                <div class="cookie-text">
+                    <h4>Cookies</h4>
+                    <p>Usamos cookies para mejorar tu experiencia artesanal. ¿Aceptas?</p>
+                </div>
+            </div>
+            <div class="cookie-buttons">
+                <button class="btn-cookie-accept" onclick="document.getElementById('cookie-banner').style.display='none'">Aceptar</button>
+                <button class="btn-cookie-reject" onclick="document.getElementById('cookie-banner').style.display='none'">Rechazar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== HEADER / NAVBAR ==================== -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <span class="material-symbols-outlined brand-icon">coffee</span>
+                <span class="brand-name">Café Aroma</span>
+            </div>
+            
+            <div class="nav-links-desktop">
+                <a href="#inicio" class="nav-link active">Inicio</a>
+                <a href="#menu" class="nav-link">Menú</a>
+                <a href="#promos" class="nav-link">Promociones</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </div>
+            
+            <div class="nav-actions">
+                <span class="lang-toggle">ES | EN</span>
+                <!-- Mobile menu checkbox hack -->
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="menu-btn">
+                    <span class="material-symbols-outlined">menu</span>
+                </label>
+                
+                <!-- Mobile Drawer -->
+                <div class="drawer-overlay"></div>
+                <aside class="drawer">
+                    <div class="drawer-header">
+                        <span class="drawer-title">Café Aroma</span>
+                        <label for="menu-toggle" class="drawer-close">
+                            <span class="material-symbols-outlined">close</span>
+                        </label>
+                    </div>
+                    <nav class="drawer-nav">
+                        <a href="#inicio" class="drawer-link active">
+                            <span class="material-symbols-outlined">home</span>
+                            <span>Inicio</span>
+                        </a>
+                        <a href="#about" class="drawer-link">
+                            <span class="material-symbols-outlined">history</span>
+                            <span>Nosotros</span>
+                        </a>
+                        <a href="#menu" class="drawer-link">
+                            <span class="material-symbols-outlined">menu_book</span>
+                            <span>Menú</span>
+                        </a>
+                        <a href="#promos" class="drawer-link">
+                            <span class="material-symbols-outlined">local_offer</span>
+                            <span>Promociones</span>
+                        </a>
+                        <a href="#contacto" class="drawer-link">
+                            <span class="material-symbols-outlined">mail</span>
+                            <span>Contacto</span>
+                        </a>
+                    </nav>
+                </aside>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="inicio">
+        <div class="hero-bg">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBl9bO5OGHOyOvJMfMt0I-OQY89U-3o3hxuiPpVJcEAhiz0e0MwPj2XHzXzK_WKU4qPMf3yVLebv5IKD9BcFDVCG95agSivmkxukI_lYU2ZJAasb-vFOP4B-nvjj9j9GjREJfL1U6me6POqPRVmKALRhclHdxxmMlqdbpN8bq9cY8LzzfUIZdgHQ2IRyH5BslEsQM1BrGCc2hQA647HZKh9OB79qj95c9yps2tgvBmCB34Lg7hR1j1n-xWiAsmA6hQ3lehycOWBaxX" alt="Café artesanal">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <span class="hero-label">Desde 1924</span>
+            <h1 class="hero-title">El Aroma de la Tradición</h1>
+            <p class="hero-desc">Redescubre el placer de una pausa perfecta con granos seleccionados y tostados artesanalmente en el corazón de la ciudad.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn-primary">Ver Menú</a>
+                <a href="#about" class="btn-outline">Nuestra Historia</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="about" id="about">
+        <div class="container about-grid">
+            <div class="about-image-wrapper">
+                <div class="about-image-bg"></div>
+                <img class="about-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6_h6uFLOIGDfZPhLbnEeQmPqspYxnBJJ0eXODpWCCwfXIJEVq_uyhJbAzKNLGhv65YdpLGsQdaRI-PLlBnAr1XrstV5-HFnohwiQcwbzJ8I904patBqRkQMYMFHCFQ5O-Xl2-xlLbzCrAzHnIohOTb2W_qVmCSANUYJpLX3qHRpnjyjOh6B9pXjYPwV38Gy78ZhOPOFKi6HilSxdDXAymCCARoudE3J7bnSWEkAxvwq4pv_osnak-6MtTEasFIH1qsJyi3gK_OWq-" alt="Barista preparando café">
+            </div>
+            <div class="about-text">
+                <h2 class="section-title">Un Legado de Calidad y Confort</h2>
+                <p class="about-paragraph">En Café Aroma, cada taza cuenta una historia que comenzó hace décadas. Nos apasiona la "Modern Heritage": fusionar las técnicas tradicionales de tostado con la innovación de la tercera ola del café.</p>
+                <p class="about-paragraph">Nuestro espacio está diseñado para ser un refugio urbano, un lugar donde el tiempo se ralentiza y los sentidos se despiertan con el aroma del grano recién molido.</p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Arábica Premium</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">Años de Historia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== MENU SECTION ==================== -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center">Nuestra Selección</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="category-chips">
+                <span class="chip chip-active">Todos</span>
+                <span class="chip">Clásicos</span>
+                <span class="chip">Especialidad</span>
+                <span class="chip">Fríos</span>
+            </div>
+            
+            <div class="menu-grid">
+                <!-- Producto 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2JOO6JiWV5UX5jAMLGJeYhLjoTl_lEC7hd1Ry06Yx5xEaBkG-qox9UDIGOFVqpMO_hkVeXWahDJnDHDagPtvzNHBvQNAtBo_Cuv9qsj6yH2j23DB2kTEzMfT5q-My5bgoIgIwaM09hBRFG2CoinPCm5fEKcKloUDDFIzQbOVijLCdVP2c52NMvWVYta2qdAjFwFSXP2vxktNJllY-OgXaMNrVa-4-zQrMqCaLajzk3vQd3Tit-goUqMbG1JaomquPRxaBd-_PWB4_" alt="Capuccino">
+                    </div>
+                    <h3 class="product-name">Capuccino</h3>
+                    <p class="product-desc">Balance perfecto de espresso, leche y crema.</p>
+                    <span class="product-price">$4.50</span>
+                </div>
+                
+                <!-- Producto 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHdmv2Tc5aytWorHmRNorxP1bkdaZ_pFC56VcKj7QP0SQ3qKUWGlMTnyC5ZbCSwBdGNCBvrOYnUg42nfubSew2NDe6HnRiKoWSPTmmxrvi-dHgN6SwFs_pndKkLOvsrqd1qvfgqnym7YDQPcl7Th7yx5vh8-CMJCvcNGPnNVZIYr3-ojTCGQay3BzURsaboEmFfolbrwK3GnbMKQKWjA_bSqpTRnefsuy6WiZnaGctAz-MSa6HYadtXQ3CVoErGJKrpOjHXCCutYcN" alt="Espresso Solo">
+                    </div>
+                    <h3 class="product-name">Espresso Solo</h3>
+                    <p class="product-desc">La esencia pura de nuestro grano arábica.</p>
+                    <span class="product-price">$3.20</span>
+                </div>
+                
+                <!-- Producto 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyeuFQ_Y9u2_Vymfy6PtiZBIJjqUhB0u3yJBAXBBjv4Qyb11MPae7SpW2P8dIYn6JUWFGS5BqT75UlgKWNNS-paqkCKc-naJDqkX6wK89ZRB9mCFFXLtY7nVBiiEWAQYJwR5aeatE8fnWr-HYVg_6RCVp51AzTDymHZjLd4ZSwtyAo-g8rM64E_YfEz2aU_FW4jTd2338E1P9IIZfNn6isXuh6umaZtkU44QaJJDZA58L5XTMZ_fFcce1-14zu4yy1kCZ9KGTYfoh9" alt="Latte Vainilla">
+                    </div>
+                    <h3 class="product-name">Latte Vainilla</h3>
+                    <p class="product-desc">Sedosa leche vaporizada con un toque dulce.</p>
+                    <span class="product-price">$4.80</span>
+                </div>
+                
+                <!-- Producto 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjyIA-QZ1rh-Mzlboh20lSxA_1sJ9J4qQ9Drt9um2Ze3YHus2MdWBY22WuJmMqHSYICCfyzow7gYc5RHlSrluQVy2rx_7M0G0IMWLSSDSlFGQQ4ih3aqWGlI8MdwMY1ibc7eNjBnoCchE8TO-S7eQdb4kG3ddkANS8FfASMORMCx6cIk6o-V6CST7cuJ09u5Bbh8tVz8uU_5emUSF3jkFpbmEw_yAPJvKjiRmJXgDAHyWRLpCp3qQo55GJj5mXyUPBGLN6AgqrJOYb" alt="Flat White">
+                    </div>
+                    <h3 class="product-name">Flat White</h3>
+                    <p class="product-desc">Intenso, suave y perfectamente emulsionado.</p>
+                    <span class="product-price">$4.60</span>
+                </div>
+                
+                <!-- Producto 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfVoQcc6jmGLMScsRguFGkRXhU5WEyeQ4MDHl4GI_LwcMltprWIRODz9WkIV7lhtF4mlyDrj9BZBkTuaRUGAoz8hRpFXMla0QUgWKPrLeokQenWhzAPPOOiMrsEe2QNSS9i9YPa9ORxmNv35_H4gfqumfNZ2DGNnbMKw3Sd-IzjR5xnEcJ96dk_M6hWlKWBWe170w5-d3ZdRSyHHa0TbPqtElrAQcRmOjL6GLMnJ4teViFo2NldwbcvM-LNGrrzcQi909aAjMnVwnA" alt="Cold Brew">
+                    </div>
+                    <h3 class="product-name">Cold Brew</h3>
+                    <p class="product-desc">Infusión en frío por 12 horas. Refrescante.</p>
+                    <span class="product-price">$5.00</span>
+                </div>
+                
+                <!-- Producto 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBblcAyx15NCBKWA4YLq-wYWOqN4UrkJ1zHfTCR1nmF9JqcPv4Y_Ml1_2JLpr9iNpYYAtPRLCgQ5vwgKYU-ZCe1m8VPCzuwiKTmksgiRYsdb4BJ1M9k1ECZni5kS59sITt9zhbryS0EVWuE4VUfdVLcGUykCjbSngFYKw4Htq1qQeKqt9l95crbUgu8bEcapxhboObSQhGw03-Y568pGPr1AdxLOV3b_W4dlbYCrtTAZkHZQUOY07w4ZQjUx1hfFIDcB1Xgr0ybOlf8" alt="Moka Artesanal">
+                    </div>
+                    <h3 class="product-name">Moka Artesanal</h3>
+                    <p class="product-desc">Cacao puro fusionado con nuestro mejor tueste.</p>
+                    <span class="product-price">$5.20</span>
+                </div>
+                
+                <!-- Producto 7 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpoa2lMuAqvH-lC2Fved0CJwmuAJCivDD_kFQ0anap8Zfkri__oP06zJlNHcWfsjlaYKgq8TbxCGy0a97Vr0iNha-d-sS0Bwpq-qK032okM1qp85s-1gQYSjOpdwSpAas9DwtAhYJEYoxO233_XwrTKxsuGYEz1-rwQ0ZfoMRbmp_Gt0VAp-dNOm4VA0AdG_StRBaZB0rsbllRYihyYf6dyLlnhLLppcBgPV7GzBE9p5GK5SxDxeOS3DFfW_HwdAcGdegv_Amg0bJh" alt="Americano">
+                    </div>
+                    <h3 class="product-name">Americano</h3>
+                    <p class="product-desc">Cuerpo ligero y aroma profundo.</p>
+                    <span class="product-price">$3.50</span>
+                </div>
+                
+                <!-- Producto 8 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCh1dk3ZwWqdJbZZg2BXxSVPkLwuXsAMUam7wqIgObHWMQ2Vu1VADB-qp0Z-qYrCB3VVmWXmOvIwUtUZieXqoiA6FP-YKeu_MlUhjoNc27zaLj-F8jnx4sPQ9cLsS5XSODNHy9LNa7k1VnSkWNmbsU34lxsZX4dNCz4LFS3w8WckHZZWcfqTB1IDFObpJQbOceYg0Lumb0EEf--G9tnXyXCLe1sHJRUCGoPgTXviR4JZ5NPftMvuVkRJf7vPKhgqJnrFMDXeaBy-AQx" alt="V60 Chemex">
+                    </div>
+                    <h3 class="product-name">V60 / Chemex</h3>
+                    <p class="product-desc">Métodos manuales para resaltar notas frutales.</p>
+                    <span class="product-price">$5.50</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROMOCIONES ==================== -->
+    <section class="promos" id="promos">
+        <div class="container">
+            <h2 class="section-title text-center light">Ofertas de la Temporada</h2>
+            <div class="promos-grid">
+                <div class="promo-card">
+                    <div class="promo-circle"></div>
+                    <h4 class="promo-title">2x1 Mañanas</h4>
+                    <p class="promo-desc">De lunes a viernes, de 8:00 a 10:00 AM en todos nuestros clásicos.</p>
+                    <a href="#" class="promo-link">Saber más <span class="material-symbols-outlined">arrow_forward</span></a>
+                </div>
+                <div class="promo-card">
+                    <div class="promo-circle"></div>
+                    <h4 class="promo-title">Combo Dulce</h4>
+                    <p class="promo-desc">Cualquier café + un croissant artesanal por solo $6.50.</p>
+                    <a href="#" class="promo-link">Saber más <span class="material-symbols-outlined">arrow_forward</span></a>
+                </div>
+                <div class="promo-card">
+                    <div class="promo-circle"></div>
+                    <h4 class="promo-title">Tarjeta Aroma</h4>
+                    <p class="promo-desc">Acumula sellos y tu 10º café corre por nuestra cuenta. ¡Pídela ya!</p>
+                    <a href="#" class="promo-link">Saber más <span class="material-symbols-outlined">arrow_forward</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIOS ==================== -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title text-center">Lo que dicen nuestros clientes</h2>
+            <div class="testimonials-scroll">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <span class="material-symbols-outlined star-filled">star</span>
+                        <span class="material-symbols-outlined star-filled">star</span>
+                        <span class="material-symbols-outlined star-filled">star</span>
+                        <span class="material-symbols-outlined star-filled">star</span>
+                        <span class="material-symbols-outlined star-filled">star</span>
+                    </div>
+                    <p class="testimonial-text">"El mejor flat white de la ciudad. El ambiente es tan acogedor que podría quedarme horas leyendo aquí."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h5>Carla Martínez</h5>
+                            <span>Guía Local</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <span class="material-symbols-outlined star-filled">star</span>
+                        <span class="material-symbols-outlined star-filled">star</span>
+                        <span class="material-symbols-outlined star-filled">star</span>
+                        <span class="material-symbols-outlined star-filled">star</span>
+                        <span class="material-symbols-outlined star-filled">star</span>
+                    </div>
+                    <p class="testimonial-text">"Artesanía pura. Se nota que aman el café. El tostado de la casa es simplemente espectacular."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h5>Roberto G.</h5>
+                            <span>Coffee Lover</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <span class="material-symbols-outlined star-filled">star</span>
+                        <span class="material-symbols-outlined star-filled">star</span>
+                        <span class="material-symbols-outlined star-filled">star</span>
+                        <span class="material-symbols-outlined star-filled">star</span>
+                        <span class="material-symbols-outlined star-filled">star</span>
+                    </div>
+                    <p class="testimonial-text">"El servicio es tan cálido como su café. Un lugar imprescindible para los que buscamos calidad."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h5>Sofía Elena</h5>
+                            <span>Diseñadora</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FAQ ==================== -->
+    <section class="faq">
+        <div class="container faq-container">
+            <h2 class="section-title text-center">Preguntas Frecuentes</h2>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>¿De dónde proviene su café?</span>
+                        <span class="material-symbols-outlined faq-icon">expand_more</span>
+                    </summary>
+                    <p class="faq-answer">Trabajamos directamente con fincas seleccionadas en Etiopía, Colombia y Brasil para garantizar un comercio justo y la más alta calidad.</p>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>¿Tienen opciones de leche vegetal?</span>
+                        <span class="material-symbols-outlined faq-icon">expand_more</span>
+                    </summary>
+                    <p class="faq-answer">¡Por supuesto! Ofrecemos leche de almendras, avena y soja sin costo adicional en todas nuestras bebidas.</p>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>¿Se puede trabajar con laptop en el local?</span>
+                        <span class="material-symbols-outlined faq-icon">expand_more</span>
+                    </summary>
+                    <p class="faq-answer">Sí, contamos con zonas habilitadas con enchufes y WiFi de alta velocidad. Solo pedimos un consumo mínimo por hora.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== UBICACIÓN & CONTACTO ==================== -->
+    <section class="location-contact">
+        <div class="container location-grid">
+            <div class="location-map">
+                <div class="map-bg"></div>
+                <div class="map-overlay"></div>
+                <div class="map-card">
+                    <h4 class="map-title">Visítanos</h4>
+                    <p class="map-address">Calle de la Canela 42, Centro Histórico.</p>
+                    <div class="map-hours">
+                        <span><span class="material-symbols-outlined">schedule</span> Lu-Vi: 8:00 - 21:00</span>
+                        <span><span class="material-symbols-outlined">schedule</span> Sá-Do: 9:00 - 22:00</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form-wrapper" id="contacto">
+                <h2 class="section-title">Escríbenos</h2>
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nombre Completo</label>
+                        <input type="text" id="name" name="name" placeholder="Juan Pérez" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="juan@ejemplo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Cuéntanos tu opinión o haz una reserva..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>Café Aroma</h3>
+                <p>© 2024 Café Aroma. Modern Heritage Coffee. Pasión por el grano, respeto por la tradición.</p>
+            </div>
+            <div class="footer-nav">
+                <h6>Navegación</h6>
+                <a href="#menu">Menú</a>
+                <a href="#about">Nosotros</a>
+                <a href="#contacto">Ubicación</a>
+            </div>
+            <div class="footer-social">
+                <h6>Síguenos</h6>
+                <div class="social-icons">
+                    <a href="#"><span class="material-symbols-outlined">public</span></a>
+                    <a href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Café Aroma. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- ==================== WHATSAPP FAB ==================== -->
+    <a href="https://wa.me/123456789" target="_blank" class="whatsapp-fab" aria-label="Contactar por WhatsApp">
+        <span class="material-symbols-outlined">chat</span>
+    </a>
+
+</body>
+</html>
